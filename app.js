@@ -154,5 +154,6 @@ document.addEventListener("DOMContentLoaded", () => {
     current = theTetrominoes[random][currentRotation];
     draw();
   }
+
   /////////////////////////
 });
