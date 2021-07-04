@@ -140,7 +140,7 @@ h3 {
     border: none;
     color: #e20505;
     background-color: transparent;
-    font-size: 2rem;
+    font-size: 1rem;
   }
   #left,
   #up,
@@ -150,11 +150,11 @@ h3 {
   }
   #left,
   #right {
-    margin-top: 80px;
+    margin-top: 20px;
     margin-bottom: 0;
   }
   #down {
-    margin-left: 25px;
+    margin-left: 0;
     margin-top: 0;
   }
 }
