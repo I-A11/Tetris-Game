@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   let squares = Array.from(document.querySelectorAll(".grid div"));
   const scoreDisplay = document.querySelector("#score");
   const startBtn = document.querySelector("#start-btn");
+  const left = document.querySelector("#left");
+  const right = document.querySelector("#right");
+  const up = document.querySelector("#up");
+  const down = document.querySelector("#down");
+
   const width = 10;
   let nextRandom = 0;
   let timerId;
@@ -88,6 +93,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   document.addEventListener("keyup", control);
+
+  //adding function to screen arrows
+  left.addEventListener("click", moveLeft);
+  right.addEventListener("click", moveRight);
+  up.addEventListener("click", rotate);
+  down.addEventListener("click", moveDown);
 
   // move down function
   function moveDown() {

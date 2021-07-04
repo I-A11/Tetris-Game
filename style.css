@@ -13,7 +13,7 @@ body {
   font-size: 2.5rem;
   color: #e20505;
 }
-.containe {
+.container {
   display: flex;
 }
 .grid {
@@ -48,6 +48,9 @@ body {
 #start-btn:active {
   background-color: #e20505;
 }
+#start-btn:focus {
+  outline: none;
+}
 
 #score,
 h3 {
@@ -72,4 +75,86 @@ h3 {
 .mini-grid div {
   height: 30px;
   width: 30px;
+}
+
+#left,
+#up,
+#down,
+#right {
+  border: none;
+  color: #e20505;
+  background-color: transparent;
+  font-size: 2.5rem;
+}
+#left,
+#up,
+#down,
+#right:focus {
+  outline: none;
+}
+
+#left,
+#right {
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+#down {
+  margin-left: 27px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .mini-grid {
+    margin-left: 5px;
+  }
+  .grid {
+    width: 200px;
+    height: 400px;
+  }
+
+  .grid div {
+    height: 20px;
+    width: 20px;
+  }
+
+  .mini-grid {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mini-grid div {
+    height: 20px;
+    width: 20px;
+  }
+  #score,
+  h3 {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: #e20505;
+  }
+
+  #left,
+  #up,
+  #down,
+  #right {
+    border: none;
+    color: #e20505;
+    background-color: transparent;
+    font-size: 2rem;
+  }
+  #left,
+  #up,
+  #down,
+  #right:focus {
+    outline: none;
+  }
+  #left,
+  #right {
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+  #down {
+    margin-left: 25px;
+    margin-top: 0;
+  }
 }
